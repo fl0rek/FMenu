@@ -32,5 +32,6 @@ MenuNameVisitor::MenuNameVisitor() {
 }
 
 std::ostream &operator<<(std::ostream &os, const MenuNameVisitor::name &name) {
-	return os << std::string(name.first, '\t') << name.second << std::string("\n");
+	//return os << std::string(name.first, '\t') << name.second << std::string("\n");
+	return os << std::to_string(name.first) << std::string(" ") << name.second << std::string("\n");
 }

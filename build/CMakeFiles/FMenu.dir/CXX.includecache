@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/florek/dev/FMenu/FVisitor.h
+MenuElement.h
+/home/florek/dev/FMenu/MenuElement.h
+memory
+-
+
+/home/florek/dev/FMenu/InsertVisitor.cpp
+InsertVisitor.h
+/home/florek/dev/FMenu/InsertVisitor.h
+MenuMultiSelect.h
+/home/florek/dev/FMenu/MenuMultiSelect.h
+iostream
+-
+
+/home/florek/dev/FMenu/InsertVisitor.h
+FVisitor.h
+/home/florek/dev/FMenu/FVisitor.h
+MenuElement.h
+/home/florek/dev/FMenu/MenuElement.h
+memory
+-
+
+/home/florek/dev/FMenu/MenuElement.h
+string
+-
+functional
+-
+FVisitor.h
+/home/florek/dev/FMenu/FVisitor.h
+
+/home/florek/dev/FMenu/MenuMultiSelect.h
+vector
+-
+MenuElement.h
+/home/florek/dev/FMenu/MenuElement.h
+

@@ -12,10 +12,9 @@
 class MenuMultiSelect : public MenuElement {
 
 public:
-	void insert(uint pos, MenuElement& e);
+	void insert(uint pos, MenuElement* e);
 	void push_back(MenuElement& e);
 
-	void remove() override;
 	void remove(MenuElement* el);
 	void remove(uint pos);
 

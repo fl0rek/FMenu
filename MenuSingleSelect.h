@@ -14,8 +14,6 @@ class MenuSingleSelect : public MenuElement {
 public:
 	virtual void select() override;
 
-	virtual void remove() override;
-
 	virtual void accept(FVisitor &visitor, bool) override;
 
 	virtual void bindAction(std::function<void()> &&function);

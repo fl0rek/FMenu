@@ -12,7 +12,7 @@
 
 class MenuNameVisitor : public FVisitor {
 public:
-	typedef  std::vector<std::pair<uint, std::string>> name_list;
+	typedef std::vector<std::pair<uint, std::string>> name_list;
 	typedef std::pair<uint, std::string> name;
 
 	virtual void visit(MenuElement *element) override;

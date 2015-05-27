@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++14 -g    CMakeFiles/FMenu.dir/main.cpp.o CMakeFiles/FMenu.dir/MenuElement.cpp.o CMakeFiles/FMenu.dir/MenuMultiSelect.cpp.o CMakeFiles/FMenu.dir/FVisitor.cpp.o CMakeFiles/FMenu.dir/MenuNameVisitor.cpp.o CMakeFiles/FMenu.dir/InsertVisitor.cpp.o CMakeFiles/FMenu.dir/MenuSingleSelect.cpp.o CMakeFiles/FMenu.dir/FMenuFacade.cpp.o  -o FMenu -rdynamic 

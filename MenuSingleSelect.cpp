@@ -19,7 +19,3 @@ void MenuSingleSelect::bindAction(std::function<void()> &&function) {
 MenuSingleSelect::MenuSingleSelect(std::string name) : MenuElement(name) {
 
 }
-
-void MenuSingleSelect::remove() {
-	this->parent->remove();
-}

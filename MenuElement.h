@@ -20,7 +20,6 @@ public:
 
 	MenuElement(std::string name) :
 			name(name) {}
-	virtual void remove() = 0;
 
 protected:
 	MenuElement* parent = nullptr;

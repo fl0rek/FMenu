@@ -1,21 +1,18 @@
 #include <iostream>
-#include "MenuMultiSelect.h"
-#include "MenuNameVisitor.h"
-#include "MenuSingleSelect.h"
+#include "FMenuFacade.h"
 
 using namespace std;
 
 int main() {
-	MenuMultiSelect m("main");
-	MenuNameVisitor v;
-	m.push_back(*new MenuSingleSelect("test1"));
-
-	cout << "Hello, World!" << std::endl;
-	m.accept(v, false);
+	FMenuFacade menu("main");
 	uint i = 0;
-	for(auto n : *v.getNames())
+	for(auto n : *menu.getMenuNames())
 		cout << i++ << ":" << n;
-	std::string a;
-	cin >> a;
+	menu.addElement(1, FMenuFacade::MultiMenuElement("test1"));
+	//menu.addElement(1, FMenuFacade::MultiMenuElement("test1"));
+	std::cout << "done" << std::endl;
+	i = 0;
+	for(auto n : *menu.getMenuNames())
+		cout << i++ << ":" << n;
 	return 0;
 }
