@@ -8,7 +8,6 @@ std::unique_ptr<FVisitor> InsertVisitor::subVisitor() {
 }
 
 void InsertVisitor::visit(MenuElement* el) {
-	std::cout<<"u wot m8" << std::to_string(this->pos)<<std::endl;
 	if(!*this->pos)
 		return;
 	this->currently_visited = el;
@@ -19,6 +18,6 @@ void InsertVisitor::visit(MenuElement* el) {
 }
 
 void InsertVisitor::insertElementAt(uint offset) {
-	(static_cast<MenuMultiSelect*>(this->currently_visited))->insert(this->offset, this->el);
+	(static_cast<MenuMultiSelect*>(this->currently_visited))->insert(offset-1, this->el);
 }
 

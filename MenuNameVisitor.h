@@ -28,6 +28,5 @@ private:
 	uint level = 0;
 };
 
-std::ostream& operator<<(std::ostream& out, const MenuNameVisitor::name&);
 
 #endif //FMENU_MENUNAMEVISITOR_H

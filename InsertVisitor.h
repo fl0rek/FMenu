@@ -1,13 +1,15 @@
 #include "FVisitor.h"
 #include "MenuElement.h"
 #include <memory>
+#include <iostream>
 
 class InsertVisitor : public FVisitor {
 public:
 	InsertVisitor(MenuElement* el, uint pos) :
-		el(el), pos(std::make_shared<uint>(pos)) {
-			this->parent = this;
-		}
+			el(el), pos(std::make_shared<uint>(pos)) {
+		this->parent = this;
+		this->offset = pos;
+	}
 	void visit(MenuElement*) override;
 	virtual std::unique_ptr<FVisitor> subVisitor() override;
 private:

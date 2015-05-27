@@ -12,7 +12,10 @@ int main() {
 	//menu.addElement(1, FMenuFacade::MultiMenuElement("test1"));
 	std::cout << "done" << std::endl;
 	i = 0;
-	for(auto n : *menu.getMenuNames())
-		cout << i++ << ":" << n;
+	for(FMenuFacade::name n : *menu.getMenuNames())
+		cout << i++ << ":" << n << std::endl;
+
+	std::cout << "fuck off m8 done" << std::endl;
+	cin >> i;
 	return 0;
 }

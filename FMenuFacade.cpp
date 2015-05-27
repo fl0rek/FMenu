@@ -1,3 +1,4 @@
+#include <sstream>
 #include "FMenuFacade.h"
 #include "MenuMultiSelect.h"
 #include "MenuSingleSelect.h"
@@ -22,7 +23,7 @@ void FMenuFacade::removeElement(uint pos) {
 
 std::shared_ptr<FMenuFacade::name_list> FMenuFacade::getMenuNames() {
 	MenuNameVisitor v;
-	v.visit(this->root.get());
+	this->root->accept(v, false);
 	return v.getNames();
 }
 
@@ -31,4 +32,10 @@ void FMenuFacade::selectElement(uint pos) {
 
 FMenuFacade::FMenuFacade(std::string name) {
 	this->root = std::make_unique<MenuMultiSelect>(name);
+}
+
+std::ostream &operator<<(std::ostream &os, const FMenuFacade::name &name) {
+	std::stringstream ss;
+	ss << std::string(name.first, ' ') << ":" << name.second << "\n";
+	return os << ss;
 }

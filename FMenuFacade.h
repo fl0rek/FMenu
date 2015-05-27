@@ -8,6 +8,7 @@
 class FMenuFacade {
 public:
 	typedef MenuNameVisitor::name_list name_list;
+	typedef std::pair<uint, std::string> name;
 
 	FMenuFacade(std::string name);
 	void addElement(uint pos, MenuElement *el);
@@ -20,3 +21,5 @@ public:
 private:
 	std::unique_ptr<MenuMultiSelect> root;
 };
+
+std::ostream& operator<<(std::ostream& out, const FMenuFacade::name&);
