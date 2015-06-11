@@ -1,0 +1,99 @@
+\hypertarget{classSelectElementVisitor}{}\section{Select\+Element\+Visitor Class Reference}
+\label{classSelectElementVisitor}\index{Select\+Element\+Visitor@{Select\+Element\+Visitor}}
+
+
+{\ttfamily \#include $<$Select\+Element\+Visitor.\+h$>$}
+
+
+
+Inheritance diagram for Select\+Element\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classSelectElementVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Select\+Element\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classSelectElementVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSelectElementVisitor_a4f37877d76bd362bdc5168eda70a4f6f}{Select\+Element\+Visitor} (uint \hyperlink{classSelectElementVisitor_a6a3a2d25639fe5e0112a52b3622d2cb1}{pos})
+\item 
+virtual void \hyperlink{classSelectElementVisitor_af2dabf443aa6b32b253ca05baf3b780f}{visit} (\hyperlink{classMenuElement}{Menu\+Element} $\ast$element)
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classFVisitor}{F\+Visitor} $>$ \hyperlink{classSelectElementVisitor_afa97120c24b6f67f81dfdb65bd243949}{sub\+Visitor} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSelectElementVisitor_aab7a8b4f9292063876c4884964d21592}{Select\+Element\+Visitor} (std\+::shared\+\_\+ptr$<$ uint $>$ \hyperlink{classSelectElementVisitor_a6a3a2d25639fe5e0112a52b3622d2cb1}{pos})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ uint $>$ \hyperlink{classSelectElementVisitor_a6a3a2d25639fe5e0112a52b3622d2cb1}{pos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSelectElementVisitor_a4f37877d76bd362bdc5168eda70a4f6f}{}\index{Select\+Element\+Visitor@{Select\+Element\+Visitor}!Select\+Element\+Visitor@{Select\+Element\+Visitor}}
+\index{Select\+Element\+Visitor@{Select\+Element\+Visitor}!Select\+Element\+Visitor@{Select\+Element\+Visitor}}
+\subsubsection[{Select\+Element\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}Select\+Element\+Visitor\+::\+Select\+Element\+Visitor (
+\begin{DoxyParamCaption}
+\item[{uint}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classSelectElementVisitor_a4f37877d76bd362bdc5168eda70a4f6f}
+\hypertarget{classSelectElementVisitor_aab7a8b4f9292063876c4884964d21592}{}\index{Select\+Element\+Visitor@{Select\+Element\+Visitor}!Select\+Element\+Visitor@{Select\+Element\+Visitor}}
+\index{Select\+Element\+Visitor@{Select\+Element\+Visitor}!Select\+Element\+Visitor@{Select\+Element\+Visitor}}
+\subsubsection[{Select\+Element\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}Select\+Element\+Visitor\+::\+Select\+Element\+Visitor (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ uint $>$}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classSelectElementVisitor_aab7a8b4f9292063876c4884964d21592}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSelectElementVisitor_afa97120c24b6f67f81dfdb65bd243949}{}\index{Select\+Element\+Visitor@{Select\+Element\+Visitor}!sub\+Visitor@{sub\+Visitor}}
+\index{sub\+Visitor@{sub\+Visitor}!Select\+Element\+Visitor@{Select\+Element\+Visitor}}
+\subsubsection[{sub\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf F\+Visitor} $>$ Select\+Element\+Visitor\+::sub\+Visitor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classSelectElementVisitor_afa97120c24b6f67f81dfdb65bd243949}
+
+
+Implements \hyperlink{classFVisitor_ae7b318528ba0bd915a0c4958eb3fe437}{F\+Visitor}.
+
+\hypertarget{classSelectElementVisitor_af2dabf443aa6b32b253ca05baf3b780f}{}\index{Select\+Element\+Visitor@{Select\+Element\+Visitor}!visit@{visit}}
+\index{visit@{visit}!Select\+Element\+Visitor@{Select\+Element\+Visitor}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}void Select\+Element\+Visitor\+::visit (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Element} $\ast$}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classSelectElementVisitor_af2dabf443aa6b32b253ca05baf3b780f}
+
+
+Implements \hyperlink{classFVisitor_a42b99a5f7354fcd014eb44951d778058}{F\+Visitor}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSelectElementVisitor_a6a3a2d25639fe5e0112a52b3622d2cb1}{}\index{Select\+Element\+Visitor@{Select\+Element\+Visitor}!pos@{pos}}
+\index{pos@{pos}!Select\+Element\+Visitor@{Select\+Element\+Visitor}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$uint$>$ Select\+Element\+Visitor\+::pos\hspace{0.3cm}{\ttfamily [private]}}\label{classSelectElementVisitor_a6a3a2d25639fe5e0112a52b3622d2cb1}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{SelectElementVisitor_8h}{Select\+Element\+Visitor.\+h}\item 
+\hyperlink{SelectElementVisitor_8cpp}{Select\+Element\+Visitor.\+cpp}\end{DoxyCompactItemize}

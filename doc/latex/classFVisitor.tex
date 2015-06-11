@@ -1,0 +1,63 @@
+\hypertarget{classFVisitor}{}\section{F\+Visitor Class Reference}
+\label{classFVisitor}\index{F\+Visitor@{F\+Visitor}}
+
+
+{\ttfamily \#include $<$F\+Visitor.\+h$>$}
+
+
+
+Inheritance diagram for F\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for F\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{classFVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classFVisitor_a42b99a5f7354fcd014eb44951d778058}{visit} (\hyperlink{classMenuElement}{Menu\+Element} $\ast$)=0
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classFVisitor}{F\+Visitor} $>$ \hyperlink{classFVisitor_ae7b318528ba0bd915a0c4958eb3fe437}{sub\+Visitor} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFVisitor_ae7b318528ba0bd915a0c4958eb3fe437}{}\index{F\+Visitor@{F\+Visitor}!sub\+Visitor@{sub\+Visitor}}
+\index{sub\+Visitor@{sub\+Visitor}!F\+Visitor@{F\+Visitor}}
+\subsubsection[{sub\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::unique\+\_\+ptr$<${\bf F\+Visitor}$>$ F\+Visitor\+::sub\+Visitor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classFVisitor_ae7b318528ba0bd915a0c4958eb3fe437}
+
+
+Implemented in \hyperlink{classRemoveVisitor_a44528eb89bc3150e3b322e367c1a7ffe}{Remove\+Visitor}, \hyperlink{classMenuNameVisitor_af766a058c692473485472ea569d5a54f}{Menu\+Name\+Visitor}, \hyperlink{classSelectElementVisitor_afa97120c24b6f67f81dfdb65bd243949}{Select\+Element\+Visitor}, and \hyperlink{classInsertVisitor_a6257a7684631f6ce7cf15855eb99c8f5}{Insert\+Visitor}.
+
+\hypertarget{classFVisitor_a42b99a5f7354fcd014eb44951d778058}{}\index{F\+Visitor@{F\+Visitor}!visit@{visit}}
+\index{visit@{visit}!F\+Visitor@{F\+Visitor}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}virtual void F\+Visitor\+::visit (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Element} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classFVisitor_a42b99a5f7354fcd014eb44951d778058}
+
+
+Implemented in \hyperlink{classMenuNameVisitor_a1289c718c9e60e329e68e6900c19be0f}{Menu\+Name\+Visitor}, \hyperlink{classInsertVisitor_a500b8f4ea580a84d0430b717ddd40d72}{Insert\+Visitor}, and \hyperlink{classSelectElementVisitor_af2dabf443aa6b32b253ca05baf3b780f}{Select\+Element\+Visitor}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{FVisitor_8h}{F\+Visitor.\+h}\end{DoxyCompactItemize}

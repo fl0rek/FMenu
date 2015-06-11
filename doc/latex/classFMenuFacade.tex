@@ -1,0 +1,126 @@
+\hypertarget{classFMenuFacade}{}\section{F\+Menu\+Facade Class Reference}
+\label{classFMenuFacade}\index{F\+Menu\+Facade@{F\+Menu\+Facade}}
+
+
+{\ttfamily \#include $<$F\+Menu\+Facade.\+h$>$}
+
+
+
+Collaboration diagram for F\+Menu\+Facade\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classFMenuFacade__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classMenuNameVisitor_a8feb2ed73ab4a09c56a7f87ddd2d0478}{Menu\+Name\+Visitor\+::name\+\_\+list} \hyperlink{classFMenuFacade_a45d184d76216f6ce15b1b8b2fb4febb1}{name\+\_\+list}
+\item 
+typedef std\+::pair$<$ uint, std\+::string $>$ \hyperlink{classFMenuFacade_ad7061aee91a27742df50a0ee7c0201d2}{name}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFMenuFacade_acf26e00c686baac8da8b8f5e9eff3588}{F\+Menu\+Facade} (std\+::string \hyperlink{classFMenuFacade_ad7061aee91a27742df50a0ee7c0201d2}{name})
+\item 
+void \hyperlink{classFMenuFacade_a6f1b7f4b1ab3bf079fac28cca84445cc}{add\+Element} (uint pos, \hyperlink{classMenuElement}{Menu\+Element} $\ast$el)
+\item 
+void \hyperlink{classFMenuFacade_af371e6f6404b080c20e82e4355a0842e}{remove\+Element} (uint pos)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classFMenuFacade_a45d184d76216f6ce15b1b8b2fb4febb1}{name\+\_\+list} $>$ \hyperlink{classFMenuFacade_abc6dab5e91340476bc5eb7fcd3292095}{get\+Menu\+Names} ()
+\item 
+void \hyperlink{classFMenuFacade_a233201511b3316bcdeb2e772ef9a1700}{select\+Element} (uint pos)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classMenuElement}{Menu\+Element} $\ast$ \hyperlink{classFMenuFacade_a077a600d4fc54cbab61ffdfd4a4d0e8e}{Multi\+Menu\+Element} (std\+::string \hyperlink{classFMenuFacade_ad7061aee91a27742df50a0ee7c0201d2}{name})
+\item 
+static \hyperlink{classMenuElement}{Menu\+Element} $\ast$ \hyperlink{classFMenuFacade_afcf19a803927ea2fd6c86ad2576c7629}{Single\+Menu\+Element} (std\+::string \hyperlink{classFMenuFacade_ad7061aee91a27742df50a0ee7c0201d2}{name}, std\+::function$<$ void()$>$=\mbox{[}$\,$\mbox{]}\{\})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classMenuMultiSelect}{Menu\+Multi\+Select} $>$ \hyperlink{classFMenuFacade_a00f246d05e03d88232a3b837584ab966}{root}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classFMenuFacade_ad7061aee91a27742df50a0ee7c0201d2}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!name@{name}}
+\index{name@{name}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$uint, std\+::string$>$ {\bf F\+Menu\+Facade\+::name}}\label{classFMenuFacade_ad7061aee91a27742df50a0ee7c0201d2}
+\hypertarget{classFMenuFacade_a45d184d76216f6ce15b1b8b2fb4febb1}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!name\+\_\+list@{name\+\_\+list}}
+\index{name\+\_\+list@{name\+\_\+list}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{name\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Menu\+Name\+Visitor\+::name\+\_\+list} {\bf F\+Menu\+Facade\+::name\+\_\+list}}\label{classFMenuFacade_a45d184d76216f6ce15b1b8b2fb4febb1}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFMenuFacade_acf26e00c686baac8da8b8f5e9eff3588}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\index{F\+Menu\+Facade@{F\+Menu\+Facade}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{F\+Menu\+Facade}]{\setlength{\rightskip}{0pt plus 5cm}F\+Menu\+Facade\+::\+F\+Menu\+Facade (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)}\label{classFMenuFacade_acf26e00c686baac8da8b8f5e9eff3588}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFMenuFacade_a6f1b7f4b1ab3bf079fac28cca84445cc}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{add\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void F\+Menu\+Facade\+::add\+Element (
+\begin{DoxyParamCaption}
+\item[{uint}]{pos, }
+\item[{{\bf Menu\+Element} $\ast$}]{el}
+\end{DoxyParamCaption}
+)}\label{classFMenuFacade_a6f1b7f4b1ab3bf079fac28cca84445cc}
+\hypertarget{classFMenuFacade_abc6dab5e91340476bc5eb7fcd3292095}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!get\+Menu\+Names@{get\+Menu\+Names}}
+\index{get\+Menu\+Names@{get\+Menu\+Names}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{get\+Menu\+Names}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf F\+Menu\+Facade\+::name\+\_\+list} $>$ F\+Menu\+Facade\+::get\+Menu\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classFMenuFacade_abc6dab5e91340476bc5eb7fcd3292095}
+\hypertarget{classFMenuFacade_a077a600d4fc54cbab61ffdfd4a4d0e8e}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!Multi\+Menu\+Element@{Multi\+Menu\+Element}}
+\index{Multi\+Menu\+Element@{Multi\+Menu\+Element}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{Multi\+Menu\+Element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu\+Element} $\ast$ F\+Menu\+Facade\+::\+Multi\+Menu\+Element (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classFMenuFacade_a077a600d4fc54cbab61ffdfd4a4d0e8e}
+\hypertarget{classFMenuFacade_af371e6f6404b080c20e82e4355a0842e}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!remove\+Element@{remove\+Element}}
+\index{remove\+Element@{remove\+Element}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{remove\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void F\+Menu\+Facade\+::remove\+Element (
+\begin{DoxyParamCaption}
+\item[{uint}]{pos}
+\end{DoxyParamCaption}
+)}\label{classFMenuFacade_af371e6f6404b080c20e82e4355a0842e}
+\hypertarget{classFMenuFacade_a233201511b3316bcdeb2e772ef9a1700}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!select\+Element@{select\+Element}}
+\index{select\+Element@{select\+Element}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{select\+Element}]{\setlength{\rightskip}{0pt plus 5cm}void F\+Menu\+Facade\+::select\+Element (
+\begin{DoxyParamCaption}
+\item[{uint}]{pos}
+\end{DoxyParamCaption}
+)}\label{classFMenuFacade_a233201511b3316bcdeb2e772ef9a1700}
+\hypertarget{classFMenuFacade_afcf19a803927ea2fd6c86ad2576c7629}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!Single\+Menu\+Element@{Single\+Menu\+Element}}
+\index{Single\+Menu\+Element@{Single\+Menu\+Element}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{Single\+Menu\+Element}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu\+Element} $\ast$ F\+Menu\+Facade\+::\+Single\+Menu\+Element (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::function$<$ void()$>$}]{function = {\ttfamily \mbox{[}\mbox{]}\{\}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classFMenuFacade_afcf19a803927ea2fd6c86ad2576c7629}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFMenuFacade_a00f246d05e03d88232a3b837584ab966}{}\index{F\+Menu\+Facade@{F\+Menu\+Facade}!root@{root}}
+\index{root@{root}!F\+Menu\+Facade@{F\+Menu\+Facade}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<${\bf Menu\+Multi\+Select}$>$ F\+Menu\+Facade\+::root\hspace{0.3cm}{\ttfamily [private]}}\label{classFMenuFacade_a00f246d05e03d88232a3b837584ab966}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{FMenuFacade_8h}{F\+Menu\+Facade.\+h}\item 
+\hyperlink{FMenuFacade_8cpp}{F\+Menu\+Facade.\+cpp}\end{DoxyCompactItemize}

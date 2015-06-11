@@ -1,0 +1,130 @@
+\hypertarget{classMenuNameVisitor}{}\section{Menu\+Name\+Visitor Class Reference}
+\label{classMenuNameVisitor}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+
+
+{\ttfamily \#include $<$Menu\+Name\+Visitor.\+h$>$}
+
+
+
+Inheritance diagram for Menu\+Name\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classMenuNameVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Menu\+Name\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classMenuNameVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::pair$<$ uint, std\+::string $>$ $>$ \hyperlink{classMenuNameVisitor_a8feb2ed73ab4a09c56a7f87ddd2d0478}{name\+\_\+list}
+\item 
+typedef std\+::pair$<$ uint, std\+::string $>$ \hyperlink{classMenuNameVisitor_a1ce6e7b626afbbcaa26785596900f531}{name}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classMenuNameVisitor_a1289c718c9e60e329e68e6900c19be0f}{visit} (\hyperlink{classMenuElement}{Menu\+Element} $\ast$element) override
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classFVisitor}{F\+Visitor} $>$ \hyperlink{classMenuNameVisitor_af766a058c692473485472ea569d5a54f}{sub\+Visitor} () override
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classMenuNameVisitor_a8feb2ed73ab4a09c56a7f87ddd2d0478}{name\+\_\+list} $>$ \hyperlink{classMenuNameVisitor_a9a8aead92197c2d1d63c5fa61b8f0b36}{get\+Names} ()
+\item 
+\hyperlink{classMenuNameVisitor_a17b31fe2e049705f3af50ecf9da00777}{Menu\+Name\+Visitor} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMenuNameVisitor_abba7f7e2b39a69a8ecc20eb570202e00}{Menu\+Name\+Visitor} (std\+::shared\+\_\+ptr$<$ \hyperlink{classMenuNameVisitor_a8feb2ed73ab4a09c56a7f87ddd2d0478}{name\+\_\+list} $>$ parent\+\_\+names, uint \hyperlink{classMenuNameVisitor_a77280f5654e700b95c1e22d32ae616fa}{level})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classMenuNameVisitor_a8feb2ed73ab4a09c56a7f87ddd2d0478}{name\+\_\+list} $>$ \hyperlink{classMenuNameVisitor_a7237e6e9df65d870a95add62b07d1176}{names}
+\item 
+uint \hyperlink{classMenuNameVisitor_a77280f5654e700b95c1e22d32ae616fa}{level} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classMenuNameVisitor_a1ce6e7b626afbbcaa26785596900f531}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!name@{name}}
+\index{name@{name}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::pair$<$uint, std\+::string$>$ {\bf Menu\+Name\+Visitor\+::name}}\label{classMenuNameVisitor_a1ce6e7b626afbbcaa26785596900f531}
+\hypertarget{classMenuNameVisitor_a8feb2ed73ab4a09c56a7f87ddd2d0478}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!name\+\_\+list@{name\+\_\+list}}
+\index{name\+\_\+list@{name\+\_\+list}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{name\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$std\+::pair$<$uint, std\+::string$>$ $>$ {\bf Menu\+Name\+Visitor\+::name\+\_\+list}}\label{classMenuNameVisitor_a8feb2ed73ab4a09c56a7f87ddd2d0478}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMenuNameVisitor_a17b31fe2e049705f3af50ecf9da00777}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{Menu\+Name\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+Name\+Visitor\+::\+Menu\+Name\+Visitor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classMenuNameVisitor_a17b31fe2e049705f3af50ecf9da00777}
+\hypertarget{classMenuNameVisitor_abba7f7e2b39a69a8ecc20eb570202e00}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{Menu\+Name\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+Name\+Visitor\+::\+Menu\+Name\+Visitor (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf name\+\_\+list} $>$}]{parent\+\_\+names, }
+\item[{uint}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{classMenuNameVisitor_abba7f7e2b39a69a8ecc20eb570202e00}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMenuNameVisitor_a9a8aead92197c2d1d63c5fa61b8f0b36}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!get\+Names@{get\+Names}}
+\index{get\+Names@{get\+Names}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{get\+Names}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf Menu\+Name\+Visitor\+::name\+\_\+list} $>$ Menu\+Name\+Visitor\+::get\+Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classMenuNameVisitor_a9a8aead92197c2d1d63c5fa61b8f0b36}
+\hypertarget{classMenuNameVisitor_af766a058c692473485472ea569d5a54f}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!sub\+Visitor@{sub\+Visitor}}
+\index{sub\+Visitor@{sub\+Visitor}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{sub\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf F\+Visitor} $>$ Menu\+Name\+Visitor\+::sub\+Visitor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{classMenuNameVisitor_af766a058c692473485472ea569d5a54f}
+
+
+Implements \hyperlink{classFVisitor_ae7b318528ba0bd915a0c4958eb3fe437}{F\+Visitor}.
+
+\hypertarget{classMenuNameVisitor_a1289c718c9e60e329e68e6900c19be0f}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!visit@{visit}}
+\index{visit@{visit}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Name\+Visitor\+::visit (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Element} $\ast$}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{classMenuNameVisitor_a1289c718c9e60e329e68e6900c19be0f}
+
+
+Implements \hyperlink{classFVisitor_a42b99a5f7354fcd014eb44951d778058}{F\+Visitor}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMenuNameVisitor_a77280f5654e700b95c1e22d32ae616fa}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!level@{level}}
+\index{level@{level}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{level}]{\setlength{\rightskip}{0pt plus 5cm}uint Menu\+Name\+Visitor\+::level = 0\hspace{0.3cm}{\ttfamily [private]}}\label{classMenuNameVisitor_a77280f5654e700b95c1e22d32ae616fa}
+\hypertarget{classMenuNameVisitor_a7237e6e9df65d870a95add62b07d1176}{}\index{Menu\+Name\+Visitor@{Menu\+Name\+Visitor}!names@{names}}
+\index{names@{names}!Menu\+Name\+Visitor@{Menu\+Name\+Visitor}}
+\subsubsection[{names}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf name\+\_\+list}$>$ Menu\+Name\+Visitor\+::names\hspace{0.3cm}{\ttfamily [private]}}\label{classMenuNameVisitor_a7237e6e9df65d870a95add62b07d1176}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{MenuNameVisitor_8h}{Menu\+Name\+Visitor.\+h}\item 
+\hyperlink{MenuNameVisitor_8cpp}{Menu\+Name\+Visitor.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,142 @@
+\hypertarget{classInsertVisitor}{}\section{Insert\+Visitor Class Reference}
+\label{classInsertVisitor}\index{Insert\+Visitor@{Insert\+Visitor}}
+
+
+{\ttfamily \#include $<$Insert\+Visitor.\+h$>$}
+
+
+
+Inheritance diagram for Insert\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classInsertVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Insert\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classInsertVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInsertVisitor_a33bed2522ab19248501fb405e3d02bff}{Insert\+Visitor} (\hyperlink{classMenuElement}{Menu\+Element} $\ast$\hyperlink{classInsertVisitor_a69e0d6193f75848df28ee23d538892fa}{el}, uint \hyperlink{classInsertVisitor_aeb7469f88fb024421c1dd9cfd3608d7d}{pos})
+\item 
+void \hyperlink{classInsertVisitor_a500b8f4ea580a84d0430b717ddd40d72}{visit} (\hyperlink{classMenuElement}{Menu\+Element} $\ast$) override
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classFVisitor}{F\+Visitor} $>$ \hyperlink{classInsertVisitor_a6257a7684631f6ce7cf15855eb99c8f5}{sub\+Visitor} () override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInsertVisitor_afe0b93526e24543aef21ff47cd8cbbe9}{Insert\+Visitor} (\hyperlink{classMenuElement}{Menu\+Element} $\ast$\hyperlink{classInsertVisitor_a69e0d6193f75848df28ee23d538892fa}{el}, std\+::shared\+\_\+ptr$<$ uint $>$ \hyperlink{classInsertVisitor_aeb7469f88fb024421c1dd9cfd3608d7d}{pos}, \hyperlink{classInsertVisitor}{Insert\+Visitor} $\ast$\hyperlink{classInsertVisitor_a33db65fd081bd0448763274f1ca4632d}{parent})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMenuElement}{Menu\+Element} $\ast$ \hyperlink{classInsertVisitor_a12dabde0a05bc3909f2795a226c88053}{currently\+\_\+visited}
+\item 
+\hyperlink{classInsertVisitor}{Insert\+Visitor} $\ast$ \hyperlink{classInsertVisitor_a33db65fd081bd0448763274f1ca4632d}{parent}
+\item 
+std\+::shared\+\_\+ptr$<$ uint $>$ \hyperlink{classInsertVisitor_aeb7469f88fb024421c1dd9cfd3608d7d}{pos}
+\item 
+\hyperlink{classMenuElement}{Menu\+Element} $\ast$ \hyperlink{classInsertVisitor_a69e0d6193f75848df28ee23d538892fa}{el}
+\item 
+uint \hyperlink{classInsertVisitor_a46d57991e7305aff32cc2c8033986fc2}{offset}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classInsertVisitor_a392e3ea0fd4f20801ce0d4e1a552d378}{perform\+Action\+On\+Element\+At} (uint \hyperlink{classInsertVisitor_a46d57991e7305aff32cc2c8033986fc2}{offset})
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classInsertVisitor_a33bed2522ab19248501fb405e3d02bff}{}\index{Insert\+Visitor@{Insert\+Visitor}!Insert\+Visitor@{Insert\+Visitor}}
+\index{Insert\+Visitor@{Insert\+Visitor}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{Insert\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}Insert\+Visitor\+::\+Insert\+Visitor (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Element} $\ast$}]{el, }
+\item[{uint}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classInsertVisitor_a33bed2522ab19248501fb405e3d02bff}
+\hypertarget{classInsertVisitor_afe0b93526e24543aef21ff47cd8cbbe9}{}\index{Insert\+Visitor@{Insert\+Visitor}!Insert\+Visitor@{Insert\+Visitor}}
+\index{Insert\+Visitor@{Insert\+Visitor}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{Insert\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}Insert\+Visitor\+::\+Insert\+Visitor (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Element} $\ast$}]{el, }
+\item[{std\+::shared\+\_\+ptr$<$ uint $>$}]{pos, }
+\item[{{\bf Insert\+Visitor} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classInsertVisitor_afe0b93526e24543aef21ff47cd8cbbe9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classInsertVisitor_a392e3ea0fd4f20801ce0d4e1a552d378}{}\index{Insert\+Visitor@{Insert\+Visitor}!perform\+Action\+On\+Element\+At@{perform\+Action\+On\+Element\+At}}
+\index{perform\+Action\+On\+Element\+At@{perform\+Action\+On\+Element\+At}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{perform\+Action\+On\+Element\+At}]{\setlength{\rightskip}{0pt plus 5cm}void Insert\+Visitor\+::perform\+Action\+On\+Element\+At (
+\begin{DoxyParamCaption}
+\item[{uint}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}\label{classInsertVisitor_a392e3ea0fd4f20801ce0d4e1a552d378}
+
+
+Reimplemented in \hyperlink{classRemoveVisitor_ae13ff6c08945e8e3e8d532d9cf905cfe}{Remove\+Visitor}.
+
+\hypertarget{classInsertVisitor_a6257a7684631f6ce7cf15855eb99c8f5}{}\index{Insert\+Visitor@{Insert\+Visitor}!sub\+Visitor@{sub\+Visitor}}
+\index{sub\+Visitor@{sub\+Visitor}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{sub\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf F\+Visitor} $>$ Insert\+Visitor\+::sub\+Visitor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{classInsertVisitor_a6257a7684631f6ce7cf15855eb99c8f5}
+
+
+Implements \hyperlink{classFVisitor_ae7b318528ba0bd915a0c4958eb3fe437}{F\+Visitor}.
+
+
+
+Reimplemented in \hyperlink{classRemoveVisitor_a44528eb89bc3150e3b322e367c1a7ffe}{Remove\+Visitor}.
+
+\hypertarget{classInsertVisitor_a500b8f4ea580a84d0430b717ddd40d72}{}\index{Insert\+Visitor@{Insert\+Visitor}!visit@{visit}}
+\index{visit@{visit}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}void Insert\+Visitor\+::visit (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Element} $\ast$}]{el}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{classInsertVisitor_a500b8f4ea580a84d0430b717ddd40d72}
+
+
+Implements \hyperlink{classFVisitor_a42b99a5f7354fcd014eb44951d778058}{F\+Visitor}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classInsertVisitor_a12dabde0a05bc3909f2795a226c88053}{}\index{Insert\+Visitor@{Insert\+Visitor}!currently\+\_\+visited@{currently\+\_\+visited}}
+\index{currently\+\_\+visited@{currently\+\_\+visited}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{currently\+\_\+visited}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu\+Element}$\ast$ Insert\+Visitor\+::currently\+\_\+visited\hspace{0.3cm}{\ttfamily [protected]}}\label{classInsertVisitor_a12dabde0a05bc3909f2795a226c88053}
+\hypertarget{classInsertVisitor_a69e0d6193f75848df28ee23d538892fa}{}\index{Insert\+Visitor@{Insert\+Visitor}!el@{el}}
+\index{el@{el}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{el}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu\+Element}$\ast$ Insert\+Visitor\+::el\hspace{0.3cm}{\ttfamily [protected]}}\label{classInsertVisitor_a69e0d6193f75848df28ee23d538892fa}
+\hypertarget{classInsertVisitor_a46d57991e7305aff32cc2c8033986fc2}{}\index{Insert\+Visitor@{Insert\+Visitor}!offset@{offset}}
+\index{offset@{offset}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}uint Insert\+Visitor\+::offset\hspace{0.3cm}{\ttfamily [protected]}}\label{classInsertVisitor_a46d57991e7305aff32cc2c8033986fc2}
+\hypertarget{classInsertVisitor_a33db65fd081bd0448763274f1ca4632d}{}\index{Insert\+Visitor@{Insert\+Visitor}!parent@{parent}}
+\index{parent@{parent}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Insert\+Visitor}$\ast$ Insert\+Visitor\+::parent\hspace{0.3cm}{\ttfamily [protected]}}\label{classInsertVisitor_a33db65fd081bd0448763274f1ca4632d}
+\hypertarget{classInsertVisitor_aeb7469f88fb024421c1dd9cfd3608d7d}{}\index{Insert\+Visitor@{Insert\+Visitor}!pos@{pos}}
+\index{pos@{pos}!Insert\+Visitor@{Insert\+Visitor}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$uint$>$ Insert\+Visitor\+::pos\hspace{0.3cm}{\ttfamily [protected]}}\label{classInsertVisitor_aeb7469f88fb024421c1dd9cfd3608d7d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{InsertVisitor_8h}{Insert\+Visitor.\+h}\item 
+\hyperlink{InsertVisitor_8cpp}{Insert\+Visitor.\+cpp}\end{DoxyCompactItemize}

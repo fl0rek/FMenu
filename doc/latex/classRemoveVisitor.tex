@@ -1,0 +1,90 @@
+\hypertarget{classRemoveVisitor}{}\section{Remove\+Visitor Class Reference}
+\label{classRemoveVisitor}\index{Remove\+Visitor@{Remove\+Visitor}}
+
+
+{\ttfamily \#include $<$Remove\+Visitor.\+h$>$}
+
+
+
+Inheritance diagram for Remove\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classRemoveVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Remove\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classRemoveVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRemoveVisitor_ab80c54299d03273980f7306e3c9ec7e7}{Remove\+Visitor} (uint \hyperlink{classInsertVisitor_aeb7469f88fb024421c1dd9cfd3608d7d}{pos})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRemoveVisitor_ad6e89a6b6b17d9aaf16b63b42d7e98f0}{Remove\+Visitor} (std\+::shared\+\_\+ptr$<$ uint $>$ \hyperlink{classInsertVisitor_aeb7469f88fb024421c1dd9cfd3608d7d}{pos}, \hyperlink{classInsertVisitor}{Insert\+Visitor} $\ast$\hyperlink{classInsertVisitor_a33db65fd081bd0448763274f1ca4632d}{parent})
+\item 
+virtual void \hyperlink{classRemoveVisitor_ae13ff6c08945e8e3e8d532d9cf905cfe}{perform\+Action\+On\+Element\+At} (uint \hyperlink{classInsertVisitor_a46d57991e7305aff32cc2c8033986fc2}{offset}) override
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classFVisitor}{F\+Visitor} $>$ \hyperlink{classRemoveVisitor_a44528eb89bc3150e3b322e367c1a7ffe}{sub\+Visitor} () override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRemoveVisitor_ab80c54299d03273980f7306e3c9ec7e7}{}\index{Remove\+Visitor@{Remove\+Visitor}!Remove\+Visitor@{Remove\+Visitor}}
+\index{Remove\+Visitor@{Remove\+Visitor}!Remove\+Visitor@{Remove\+Visitor}}
+\subsubsection[{Remove\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}Remove\+Visitor\+::\+Remove\+Visitor (
+\begin{DoxyParamCaption}
+\item[{uint}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classRemoveVisitor_ab80c54299d03273980f7306e3c9ec7e7}
+\hypertarget{classRemoveVisitor_ad6e89a6b6b17d9aaf16b63b42d7e98f0}{}\index{Remove\+Visitor@{Remove\+Visitor}!Remove\+Visitor@{Remove\+Visitor}}
+\index{Remove\+Visitor@{Remove\+Visitor}!Remove\+Visitor@{Remove\+Visitor}}
+\subsubsection[{Remove\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}Remove\+Visitor\+::\+Remove\+Visitor (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ uint $>$}]{pos, }
+\item[{{\bf Insert\+Visitor} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\label{classRemoveVisitor_ad6e89a6b6b17d9aaf16b63b42d7e98f0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRemoveVisitor_ae13ff6c08945e8e3e8d532d9cf905cfe}{}\index{Remove\+Visitor@{Remove\+Visitor}!perform\+Action\+On\+Element\+At@{perform\+Action\+On\+Element\+At}}
+\index{perform\+Action\+On\+Element\+At@{perform\+Action\+On\+Element\+At}!Remove\+Visitor@{Remove\+Visitor}}
+\subsubsection[{perform\+Action\+On\+Element\+At}]{\setlength{\rightskip}{0pt plus 5cm}void Remove\+Visitor\+::perform\+Action\+On\+Element\+At (
+\begin{DoxyParamCaption}
+\item[{uint}]{offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\label{classRemoveVisitor_ae13ff6c08945e8e3e8d532d9cf905cfe}
+
+
+Reimplemented from \hyperlink{classInsertVisitor_a392e3ea0fd4f20801ce0d4e1a552d378}{Insert\+Visitor}.
+
+\hypertarget{classRemoveVisitor_a44528eb89bc3150e3b322e367c1a7ffe}{}\index{Remove\+Visitor@{Remove\+Visitor}!sub\+Visitor@{sub\+Visitor}}
+\index{sub\+Visitor@{sub\+Visitor}!Remove\+Visitor@{Remove\+Visitor}}
+\subsubsection[{sub\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unique\+\_\+ptr$<$ {\bf F\+Visitor} $>$ Remove\+Visitor\+::sub\+Visitor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}\label{classRemoveVisitor_a44528eb89bc3150e3b322e367c1a7ffe}
+
+
+Reimplemented from \hyperlink{classInsertVisitor_a6257a7684631f6ce7cf15855eb99c8f5}{Insert\+Visitor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RemoveVisitor_8h}{Remove\+Visitor.\+h}\item 
+\hyperlink{RemoveVisitor_8cpp}{Remove\+Visitor.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\hypertarget{classMenuElement}{}\section{Menu\+Element Class Reference}
+\label{classMenuElement}\index{Menu\+Element@{Menu\+Element}}
+
+
+{\ttfamily \#include $<$Menu\+Element.\+h$>$}
+
+
+
+Inheritance diagram for Menu\+Element\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classMenuElement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Menu\+Element\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classMenuElement__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{classMenuElement_a70e00c3f10e97a04d1af14df4c50fe42}{get\+Name} () const 
+\item 
+virtual void \hyperlink{classMenuElement_afbe00cbf711c2b9e103131a66caca279}{select} ()=0
+\item 
+virtual void \hyperlink{classMenuElement_a98480beb81058617a721661517cb9c7f}{accept} (\hyperlink{classFVisitor}{F\+Visitor} \&, bool skip\+\_\+hidden=true)=0
+\item 
+\hyperlink{classMenuElement_a2620780bc0bc4abc3851eadd36a72b56}{Menu\+Element} (std\+::string \hyperlink{classMenuElement_ad7a280435eda4d231a68ae8645e7d98e}{name})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMenuElement}{Menu\+Element} $\ast$ \hyperlink{classMenuElement_a460f4e15826520bea44df1ef78f2b18f}{parent} = nullptr
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classMenuElement_ad7a280435eda4d231a68ae8645e7d98e}{name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMenuElement_a2620780bc0bc4abc3851eadd36a72b56}{}\index{Menu\+Element@{Menu\+Element}!Menu\+Element@{Menu\+Element}}
+\index{Menu\+Element@{Menu\+Element}!Menu\+Element@{Menu\+Element}}
+\subsubsection[{Menu\+Element}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+Element\+::\+Menu\+Element (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classMenuElement_a2620780bc0bc4abc3851eadd36a72b56}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMenuElement_a98480beb81058617a721661517cb9c7f}{}\index{Menu\+Element@{Menu\+Element}!accept@{accept}}
+\index{accept@{accept}!Menu\+Element@{Menu\+Element}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Menu\+Element\+::accept (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+Visitor} \&}]{, }
+\item[{bool}]{skip\+\_\+hidden = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classMenuElement_a98480beb81058617a721661517cb9c7f}
+
+
+Implemented in \hyperlink{classMenuMultiSelect_a0758f4d20b850ebe3562bfde651cf0bf}{Menu\+Multi\+Select}, and \hyperlink{classMenuSingleSelect_a58b681ca44f7f195a443e24c9c1fbb0f}{Menu\+Single\+Select}.
+
+\hypertarget{classMenuElement_a70e00c3f10e97a04d1af14df4c50fe42}{}\index{Menu\+Element@{Menu\+Element}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Menu\+Element@{Menu\+Element}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Menu\+Element\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classMenuElement_a70e00c3f10e97a04d1af14df4c50fe42}
+\hypertarget{classMenuElement_afbe00cbf711c2b9e103131a66caca279}{}\index{Menu\+Element@{Menu\+Element}!select@{select}}
+\index{select@{select}!Menu\+Element@{Menu\+Element}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Menu\+Element\+::select (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classMenuElement_afbe00cbf711c2b9e103131a66caca279}
+
+
+Implemented in \hyperlink{classMenuMultiSelect_a1f38785618e99e3644b5903811748be1}{Menu\+Multi\+Select}, and \hyperlink{classMenuSingleSelect_a1fdb45b9443e2e715665205cb383432b}{Menu\+Single\+Select}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMenuElement_ad7a280435eda4d231a68ae8645e7d98e}{}\index{Menu\+Element@{Menu\+Element}!name@{name}}
+\index{name@{name}!Menu\+Element@{Menu\+Element}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Menu\+Element\+::name\hspace{0.3cm}{\ttfamily [private]}}\label{classMenuElement_ad7a280435eda4d231a68ae8645e7d98e}
+\hypertarget{classMenuElement_a460f4e15826520bea44df1ef78f2b18f}{}\index{Menu\+Element@{Menu\+Element}!parent@{parent}}
+\index{parent@{parent}!Menu\+Element@{Menu\+Element}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu\+Element}$\ast$ Menu\+Element\+::parent = nullptr\hspace{0.3cm}{\ttfamily [protected]}}\label{classMenuElement_a460f4e15826520bea44df1ef78f2b18f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{MenuElement_8h}{Menu\+Element.\+h}\item 
+\hyperlink{MenuElement_8cpp}{Menu\+Element.\+cpp}\end{DoxyCompactItemize}

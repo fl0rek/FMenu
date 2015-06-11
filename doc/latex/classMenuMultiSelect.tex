@@ -1,0 +1,131 @@
+\hypertarget{classMenuMultiSelect}{}\section{Menu\+Multi\+Select Class Reference}
+\label{classMenuMultiSelect}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+
+
+{\ttfamily \#include $<$Menu\+Multi\+Select.\+h$>$}
+
+
+
+Inheritance diagram for Menu\+Multi\+Select\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classMenuMultiSelect__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Menu\+Multi\+Select\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classMenuMultiSelect__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMenuMultiSelect_af1b3f6f62c5bab3a4a461ac4a032fcc4}{insert} (uint pos, \hyperlink{classMenuElement}{Menu\+Element} $\ast$e)
+\item 
+void \hyperlink{classMenuMultiSelect_a56e4cbb5c191f0790a586ec36ffe0e0a}{push\+\_\+back} (\hyperlink{classMenuElement}{Menu\+Element} \&e)
+\item 
+void \hyperlink{classMenuMultiSelect_a0a96589db24c6ca38e582ab420a6f3db}{remove} (\hyperlink{classMenuElement}{Menu\+Element} $\ast$el)
+\item 
+void \hyperlink{classMenuMultiSelect_a22463f3a2494e9b465047bb02e768bc1}{remove} (uint pos)
+\item 
+void \hyperlink{classMenuMultiSelect_a0758f4d20b850ebe3562bfde651cf0bf}{accept} (\hyperlink{classFVisitor}{F\+Visitor} \&visitor, bool skip\+\_\+hidden=true) override
+\item 
+void \hyperlink{classMenuMultiSelect_a1f38785618e99e3644b5903811748be1}{select} () override
+\item 
+\hyperlink{classMenuMultiSelect_ac1f71e63de20e2ca46bccdf76d558068}{Menu\+Multi\+Select} (const std\+::string \&\hyperlink{classMenuElement_ad7a280435eda4d231a68ae8645e7d98e}{name})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classMenuMultiSelect_ac34317681355d1c48ef9ea003a2c35d8}{expanded} = true
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \hyperlink{classMenuElement}{Menu\+Element} $>$ $>$ \hyperlink{classMenuMultiSelect_a38d86e6f06968a8eaa2c4e215c95000a}{sub\+Menu}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMenuMultiSelect_ac1f71e63de20e2ca46bccdf76d558068}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{Menu\+Multi\+Select}]{\setlength{\rightskip}{0pt plus 5cm}Menu\+Multi\+Select\+::\+Menu\+Multi\+Select (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classMenuMultiSelect_ac1f71e63de20e2ca46bccdf76d558068}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMenuMultiSelect_a0758f4d20b850ebe3562bfde651cf0bf}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!accept@{accept}}
+\index{accept@{accept}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Multi\+Select\+::accept (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+Visitor} \&}]{visitor, }
+\item[{bool}]{skip\+\_\+hidden = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{classMenuMultiSelect_a0758f4d20b850ebe3562bfde651cf0bf}
+
+
+Implements \hyperlink{classMenuElement_a98480beb81058617a721661517cb9c7f}{Menu\+Element}.
+
+\hypertarget{classMenuMultiSelect_af1b3f6f62c5bab3a4a461ac4a032fcc4}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!insert@{insert}}
+\index{insert@{insert}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Multi\+Select\+::insert (
+\begin{DoxyParamCaption}
+\item[{uint}]{pos, }
+\item[{{\bf Menu\+Element} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{classMenuMultiSelect_af1b3f6f62c5bab3a4a461ac4a032fcc4}
+\hypertarget{classMenuMultiSelect_a56e4cbb5c191f0790a586ec36ffe0e0a}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{push\+\_\+back}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Multi\+Select\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Element} \&}]{e}
+\end{DoxyParamCaption}
+)}\label{classMenuMultiSelect_a56e4cbb5c191f0790a586ec36ffe0e0a}
+\hypertarget{classMenuMultiSelect_a0a96589db24c6ca38e582ab420a6f3db}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!remove@{remove}}
+\index{remove@{remove}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Multi\+Select\+::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf Menu\+Element} $\ast$}]{el}
+\end{DoxyParamCaption}
+)}\label{classMenuMultiSelect_a0a96589db24c6ca38e582ab420a6f3db}
+\hypertarget{classMenuMultiSelect_a22463f3a2494e9b465047bb02e768bc1}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!remove@{remove}}
+\index{remove@{remove}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Multi\+Select\+::remove (
+\begin{DoxyParamCaption}
+\item[{uint}]{pos}
+\end{DoxyParamCaption}
+)}\label{classMenuMultiSelect_a22463f3a2494e9b465047bb02e768bc1}
+\hypertarget{classMenuMultiSelect_a1f38785618e99e3644b5903811748be1}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!select@{select}}
+\index{select@{select}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\+Multi\+Select\+::select (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{classMenuMultiSelect_a1f38785618e99e3644b5903811748be1}
+
+
+Implements \hyperlink{classMenuElement_afbe00cbf711c2b9e103131a66caca279}{Menu\+Element}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMenuMultiSelect_ac34317681355d1c48ef9ea003a2c35d8}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!expanded@{expanded}}
+\index{expanded@{expanded}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{expanded}]{\setlength{\rightskip}{0pt plus 5cm}bool Menu\+Multi\+Select\+::expanded = true\hspace{0.3cm}{\ttfamily [private]}}\label{classMenuMultiSelect_ac34317681355d1c48ef9ea003a2c35d8}
+\hypertarget{classMenuMultiSelect_a38d86e6f06968a8eaa2c4e215c95000a}{}\index{Menu\+Multi\+Select@{Menu\+Multi\+Select}!sub\+Menu@{sub\+Menu}}
+\index{sub\+Menu@{sub\+Menu}!Menu\+Multi\+Select@{Menu\+Multi\+Select}}
+\subsubsection[{sub\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::unique\+\_\+ptr$<${\bf Menu\+Element}$>$ $>$ Menu\+Multi\+Select\+::sub\+Menu\hspace{0.3cm}{\ttfamily [private]}}\label{classMenuMultiSelect_a38d86e6f06968a8eaa2c4e215c95000a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{MenuMultiSelect_8h}{Menu\+Multi\+Select.\+h}\item 
+\hyperlink{MenuMultiSelect_8cpp}{Menu\+Multi\+Select.\+cpp}\end{DoxyCompactItemize}
