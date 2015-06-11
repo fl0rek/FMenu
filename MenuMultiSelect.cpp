@@ -12,12 +12,10 @@ void MenuMultiSelect::select() {
 }
 
 void MenuMultiSelect::accept(FVisitor &visitor, bool skip_hidden) {
-	std::cout << "wat["<< this->subMenu.size() << std::endl;
 	visitor.visit(this);
 	if(this->expanded or !skip_hidden) {
 		std::unique_ptr<FVisitor> sv = visitor.subVisitor();
 		for (auto &e : this->subMenu) {
-			std::cout <<"Na"<<std::flush;
 			e->accept(*sv.get(), skip_hidden);
 		}
 	}

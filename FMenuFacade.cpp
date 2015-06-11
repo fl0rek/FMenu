@@ -4,6 +4,8 @@
 #include "MenuSingleSelect.h"
 #include "MenuNameVisitor.h"
 #include "InsertVisitor.h"
+#include "RemoveVisitor.h"
+#include "SelectElementVisitor.h"
 
 MenuElement* FMenuFacade::MultiMenuElement(std::string name) {
 	return new MenuMultiSelect(name);
@@ -19,15 +21,19 @@ void FMenuFacade::addElement(uint pos, MenuElement *el) {
 }
 
 void FMenuFacade::removeElement(uint pos) {
+	RemoveVisitor v(pos);
+	this->root->accept(v);
 }
 
 std::shared_ptr<FMenuFacade::name_list> FMenuFacade::getMenuNames() {
 	MenuNameVisitor v;
-	this->root->accept(v, false);
+	this->root->accept(v);
 	return v.getNames();
 }
 
 void FMenuFacade::selectElement(uint pos) {
+	SelectElementVisitor v(pos);
+	this->root->accept(v);
 }
 
 FMenuFacade::FMenuFacade(std::string name) {
@@ -36,6 +42,6 @@ FMenuFacade::FMenuFacade(std::string name) {
 
 std::ostream &operator<<(std::ostream &os, const FMenuFacade::name &name) {
 	std::stringstream ss;
-	ss << std::string(name.first, ' ') << ":" << name.second << "\n";
+	ss << std::string(name.first, ' ') << "-" << name.second << "\n";
 	return os << ss;
 }

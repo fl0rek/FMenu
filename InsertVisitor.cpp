@@ -12,12 +12,12 @@ void InsertVisitor::visit(MenuElement* el) {
 		return;
 	this->currently_visited = el;
 	if(!--*this->pos) {
-		this->parent->insertElementAt(offset);
+		this->parent->performActionOnElementAt(offset);
 	}
 	//offset++;
 }
 
-void InsertVisitor::insertElementAt(uint offset) {
+void InsertVisitor::performActionOnElementAt(uint offset) {
 	(static_cast<MenuMultiSelect*>(this->currently_visited))->insert(offset-1, this->el);
 }
 

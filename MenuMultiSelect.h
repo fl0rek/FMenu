@@ -25,7 +25,7 @@ public:
 	MenuMultiSelect(const std::string &name) : MenuElement(name) { }
 
 private:
-	bool expanded = false;
+	bool expanded = true;
 	std::vector<std::unique_ptr<MenuElement>> subMenu;
 };
 

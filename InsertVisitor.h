@@ -1,3 +1,5 @@
+#pragma once
+
 #include "FVisitor.h"
 #include "MenuElement.h"
 #include <memory>
@@ -12,14 +14,17 @@ public:
 	}
 	void visit(MenuElement*) override;
 	virtual std::unique_ptr<FVisitor> subVisitor() override;
-private:
+
+protected:
 	InsertVisitor(MenuElement* el, std::shared_ptr<uint> pos, InsertVisitor* parent) 
 		: parent(parent), pos(pos), offset(*pos), el(el) { }
-	void insertElementAt(uint offset);
 
 	MenuElement *currently_visited;
 	InsertVisitor* parent;
 	std::shared_ptr<uint> pos;
 	MenuElement *el;
 	uint offset;
+
+private:
+	virtual void performActionOnElementAt(uint offset);
 };
