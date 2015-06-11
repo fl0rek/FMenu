@@ -16,12 +16,13 @@ public:
 
 	virtual void accept(FVisitor &visitor, bool) override;
 
-	virtual void bindAction(std::function<void()> &&function);
+	virtual void bindAction(std::function<void()> function);
 
 	MenuSingleSelect(std::string name);
 
 private:
-	std::unique_ptr<std::function<void()>> action;
+	//std::unique_ptr<std::function<void()>> action;
+	std::function<void()> action;
 };
 
 

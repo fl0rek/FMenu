@@ -8,11 +8,17 @@
 #include "SelectElementVisitor.h"
 
 MenuElement* FMenuFacade::MultiMenuElement(std::string name) {
-	return new MenuMultiSelect(name);
+	auto multi = new MenuMultiSelect(name);
+	auto single = new MenuSingleSelect("-");
+	InsertVisitor v(single, 1);
+	multi->accept(v);
+	return multi;
 }
 
-MenuElement* FMenuFacade::SingleMenuElement(std::string name) {
-	return new MenuSingleSelect(name);
+MenuElement* FMenuFacade::SingleMenuElement(std::string name, std::function<void()> function) {
+	auto single = new MenuSingleSelect(name);
+	single->bindAction(function);
+	return single;
 }
 
 void FMenuFacade::addElement(uint pos, MenuElement *el) {
@@ -43,5 +49,5 @@ FMenuFacade::FMenuFacade(std::string name) {
 std::ostream &operator<<(std::ostream &os, const FMenuFacade::name &name) {
 	std::stringstream ss;
 	ss << std::string(name.first, ' ') << "-" << name.second << "\n";
-	return os << ss;
+	return os << ss.str();
 }

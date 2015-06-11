@@ -11,7 +11,8 @@ int main() {
 		cout << i++ << ":" << std::string(n.first, ' ') << n.second << std::endl;
 	menu.addElement(1, FMenuFacade::MultiMenuElement("test1"));
 	menu.addElement(1, FMenuFacade::SingleMenuElement("test2"));
-	std::cout << "done" << std::endl;
+
+	std::cout << "done1" << std::endl;
 
 	i = 0;
 	auto foo = menu.getMenuNames();
@@ -20,12 +21,12 @@ int main() {
 	for(FMenuFacade::name n : *menu.getMenuNames())
 		cout << i++ << ":" << std::string(n.first, ' ') << n.second << std::endl;
 
+	std::cout << "done2" << std::endl;
 	menu.removeElement(1);
 	i = 0;
 	for(FMenuFacade::name n : *menu.getMenuNames())
 		cout << i++ << ":" << std::string(n.first, ' ') << n.second << std::endl;
 
-	std::cout << "fuck off m8 done " << foo->size() << std::endl;
-	cin >> i;
+	std::cout << "done3" << std::endl;
 	return 0;
 }

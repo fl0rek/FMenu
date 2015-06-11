@@ -17,7 +17,7 @@ public:
 	void selectElement(uint pos);
 
 	static MenuElement* MultiMenuElement(std::string name);
-	static MenuElement* SingleMenuElement(std::string name);
+	static MenuElement* SingleMenuElement(std::string name, std::function<void()> = []{});
 private:
 	std::unique_ptr<MenuMultiSelect> root;
 };

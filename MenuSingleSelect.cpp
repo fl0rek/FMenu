@@ -5,15 +5,15 @@
 #include "MenuSingleSelect.h"
 
 void MenuSingleSelect::select() {
-	(*this->action)();
+	this->action();
 }
 
 void MenuSingleSelect::accept(FVisitor &visitor, bool) {
 	visitor.visit(this);
 }
 
-void MenuSingleSelect::bindAction(std::function<void()> &&function) {
-	this->action = std::unique_ptr<std::function<void()>>(&function);
+void MenuSingleSelect::bindAction(std::function<void()> function) {
+	this->action = function;
 }
 
 MenuSingleSelect::MenuSingleSelect(std::string name) : MenuElement(name) {
